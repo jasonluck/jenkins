@@ -1,4 +1,4 @@
-FROM jenkins/jnlp-slave:3.27-1-alpine
+FROM meetveracity/va-jenkins-slave:alpine
 
 USER root
 
@@ -6,7 +6,7 @@ USER root
 RUN apk add --no-cache docker
 
 # Install docker-compose
-RUN apk add py-pip && \
-    pip install docker-compose
+# RUN apk add py-pip && \
+#     pip install docker-compose
 
 USER jenkins

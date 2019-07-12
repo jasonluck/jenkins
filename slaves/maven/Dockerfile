@@ -1,4 +1,4 @@
-FROM jenkins/jnlp-slave:3.29-1
+FROM meetveracity/va-jenkins-slave
 
 USER root
 
